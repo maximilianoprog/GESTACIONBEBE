@@ -1,0 +1,68 @@
+/* Estilos para el modo responsive */
+
+@media screen and (max-width: 768px) {
+  .menu ul {
+      display: none;
+  }
+
+  .menu.active ul {
+      display: block;
+  }
+
+  .hamburger {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 10px;
+      cursor: pointer;
+  }
+
+  .hamburger i, .close i {
+      color: white;
+      font-size: 20px;
+  }
+
+  .close {
+      display: none;
+  }
+
+  .menu.active .hamburger {
+      display: none;
+  }
+
+  .menu.active .close {
+      display: flex;
+  }
+
+  .menu.active ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #000;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      right: 0;
+      z-index: 1;
+  }
+
+  .menu.active ul li {
+      margin: 20px 0;
+  }
+
+  .container {
+      flex-direction: column;
+  }
+
+  .image-container, .text-container {
+      margin: 0 0 20px;
+  }
+}
+
+/* Ocultar el menú y la "X" en pantallas grandes */
+@media screen and (min-width: 769px) {
+  .hamburger, .close {
+      display: none;
+  }
+}
