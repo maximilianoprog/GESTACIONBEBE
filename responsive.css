@@ -1,6 +1,110 @@
 /* Estilos para el modo responsive */
 
 @media screen and (max-width: 768px) {
+    /* Ocultar el menú inicialmente en pantallas pequeñas */
+    .menu ul {
+      display: none;
+    }
+  
+    /* Mostrar el menú cuando está activo */
+    .menu.active ul {
+      display: block;
+    }
+  
+    /* Estilos para el ícono hamburguesa */
+    .hamburger {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 10px;
+      cursor: pointer;
+    }
+  
+    /* Estilos para el ícono de cierre (X) */
+    .hamburger i, .close i {
+      color: white;
+      font-size: 20px;
+    }
+  
+    /* Ocultar el ícono de cerrar inicialmente */
+    .close {
+      display: none;
+    }
+  
+    /* Ocultar el ícono hamburguesa cuando el menú está activo */
+    .menu.active .hamburger {
+      display: none;
+    }
+  
+    /* Mostrar el ícono de cierre cuando el menú está activo */
+    .menu.active .close {
+      display: flex;
+    }
+  
+    /* Menú desplegable en modo columna */
+    .menu.active ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #e9e9f0;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      right: 0;
+      z-index: 1;
+      color: white;
+    }
+  
+    /* Espaciado entre elementos del menú */
+    .menu.active ul li {
+      margin: 20px 0;
+    }
+  
+    /* Estilos de layout responsivo */
+    .container {
+      flex-direction: column;
+    }
+  
+    .image-container, .text-container {
+      margin: 0 0 20px;
+      
+    }
+  }
+  
+  /* Estilos para pantallas grandes */
+  @media screen and (min-width: 769px) {
+    /* Ocultar el ícono de hamburguesa y el de cierre en pantallas grandes */
+    .hamburger, .close {
+      display: none;
+    }
+  
+    /* Mostrar el menú como una lista horizontal en pantallas grandes */
+    .menu ul {
+      display: flex;
+      justify-content: flex-end;
+    }
+  
+    .menu ul li {
+      margin: 0 15px;
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+@media screen and (max-width: 768px) {
   .menu ul {
       display: none;
   }
@@ -59,10 +163,11 @@
       margin: 0 0 20px;
   }
 }
-
+*/
 /* Ocultar el menú y la "X" en pantallas grandes */
-@media screen and (min-width: 769px) {
+/*@media screen and (min-width: 769px) {
   .hamburger, .close {
       display: none;
   }
 }
+*/
