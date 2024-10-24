@@ -8,8 +8,8 @@ body {
 }
 
 header {
-    background-color: #007acc;
-    color: white;
+    background-color: #cf1481;  /*#007acc*/
+    color: rgb(241, 240, 240);
     text-align: center;
     padding: 20px;
 }
@@ -38,12 +38,18 @@ h2 {
     text-align: center;
 }
 
+
+
+
+
+
+
 .form-container {
     margin: 20px;
     padding: 20px;
     background-color: white;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(5, 5, 5, 0.1);
 }
 
 form {
@@ -64,7 +70,7 @@ input, textarea {
 
 button {
     padding: 10px;
-    background-color: #007acc;
+    background-color: #cc0077;  /*FONDO DONDE ESTA ENVIAR*/
     color: white;
     border: none;
     border-radius: 4px;
@@ -72,7 +78,7 @@ button {
 }
 
 button:hover {
-    background-color: #005f99;
+    background-color: #036fb3;
 }
 
 footer {
@@ -80,5 +86,67 @@ footer {
     margin: 20px 0;
 }
 
+
+
+
+    
+    
+    /* Estilos para la clase "pruebas" */
+    .pruebas {
+        
+       display: flex;
+       justify-content: center;   
+       align-items: center;
+        /*min-height: 100vh;*/
+       padding: 20px;
+       
+    }
+
+    
+
+    /* Estilos para el contenedor de embriología */
+    .emb {
+        
+    background-color: #e91e63; /* Color rosa fuerte para el contenedor */
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    
+    /* Estilos de texto */
+    .emb h2 {
+        
+    font-size: 2rem;
+    color: #ffffff; /* Texto blanco */
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #ece1e0; /* Línea decorativa roja */
+    padding-bottom: 10px;
+    }
+    
+    .emb p {
+        
+    line-height: 1.6;
+    font-size: 1.1rem;
+    color: #f3e9e9;   /*letras */
+    margin-bottom: 20px;
+    }
+    
+    
+    
+    /* Estilo para títulos de sección */
+    .emb p:first-of-type {
+        
+       
+    font-weight: bold;
+    color: #f0f4f7; /* Color rojo para destacar los títulos de las secciones */
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    }
+    
+    
+    
 
 

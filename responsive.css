@@ -22,7 +22,7 @@
   
     /* Estilos para el ícono de cierre (X) */
     .hamburger i, .close i {
-      color: white;
+      color: rgb(31, 6, 6);    /*TRES LINEAS*/
       font-size: 20px;
     }
   
@@ -47,13 +47,13 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      background-color: #e9e9f0;
+      background-color: #ebebf1;   /* FONDO EN DOND EESTA ADNN Y EMB*/
       position: absolute;
       top: 60px;
       left: 0;
       right: 0;
       z-index: 1;
-      color: white;
+      color: rgb(226, 46, 130); /* PUNTITO AL LADO DE ADN */
     }
   
     /* Espaciado entre elementos del menú */
@@ -90,6 +90,33 @@
     }
   }
   
+
+    
+.emb {
+        
+       
+  padding: 15px;
+          
+         
+  margin: 10px;
+      }
+  
+  
+     
+  .emb h2 {
+          
+         
+  font-size: 1.8rem;
+      }
+  
+      
+  
+  .emb p {
+          font-size: 1rem;
+      }
+  
+  
+      
 
 
 
